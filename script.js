@@ -23,62 +23,87 @@ const redrawCanvas = (ctx, coordinates) => {
     drawLine(ctx, coordinates);
 };
 
-const finalise = coordinates => {};
+const finalise = (coordinates, image) => {};
 
-const handleImage = () => {
-    const c = document.getElementById("canvas");
-    const ctx = c.getContext("2d");
+const handleImage = (current, coordinates) => {
+    const img = document.getElementById("image");
 
-    ctx.strokeStyle = "white";
-    ctx.lineWidth = 4;
+    img.addEventListener("load", () => {
+        const c = document.getElementById("canvas");
+        const ctx = c.getContext("2d");
 
-    redrawCanvas(ctx, []);
+        ctx.strokeStyle = "white";
+        ctx.lineWidth = 4;
 
-    let coordinates = [];
-    let clickCount = 0;
+        redrawCanvas(ctx, []);
 
-    const mouseMove = e => {
-        const x = e.layerX;
-        const y = e.layerY;
-        redrawCanvas(
-            ctx,
-            coordinates
-                .slice(0, coordinates.length - 1)
-                .concat([coordinates[coordinates.length - 1].concat([[x, y]])])
-        );
-    };
+        let clickCount = 0;
 
-    c.addEventListener("mousedown", e => {
-        const x = e.layerX;
-        const y = e.layerY;
-
-        if (clickCount === 0) {
-            coordinates[coordinates.length] = [];
-        }
-
-        coordinates[coordinates.length - 1].push([x, y]);
-
-        clickCount = clickCount + 1;
-
-        if (clickCount === 1) {
-            c.addEventListener("mousemove", mouseMove);
-        }
-        // console.log(coordinates);
-        if (clickCount === 4) {
-            coordinates = coordinates
-                .slice(0, coordinates.length - 1)
-                .concat([
-                    coordinates[coordinates.length - 1].concat([
-                        coordinates[coordinates.length - 1][0]
+        const mouseMove = e => {
+            const x = e.layerX;
+            const y = e.layerY;
+            redrawCanvas(
+                ctx,
+                coordinates
+                    .slice(0, coordinates.length - 1)
+                    .concat([
+                        coordinates[coordinates.length - 1].concat([[x, y]])
                     ])
-                ]);
-            redrawCanvas(ctx, coordinates);
-            c.removeEventListener("mousemove", mouseMove);
-            clickCount = 0;
-        }
+            );
+        };
+
+        c.addEventListener("mousedown", e => {
+            const x = e.layerX;
+            const y = e.layerY;
+
+            if (clickCount === 0) {
+                coordinates[coordinates.length] = [];
+            }
+
+            coordinates[coordinates.length - 1].push([x, y]);
+
+            clickCount = clickCount + 1;
+
+            if (clickCount === 1) {
+                c.addEventListener("mousemove", mouseMove);
+            }
+
+            if (clickCount === 4) {
+                coordinates = coordinates
+                    .slice(0, coordinates.length - 1)
+                    .concat([
+                        coordinates[coordinates.length - 1].concat([
+                            coordinates[coordinates.length - 1][0]
+                        ])
+                    ]);
+                redrawCanvas(ctx, coordinates);
+                c.removeEventListener("mousemove", mouseMove);
+                clickCount = 0;
+            }
+        });
     });
+
+    img.src = current;
 };
 
+const images = ["foo.jpg", "bar.jpg"];
+
 window.addEventListener("load", () => {
-    handleImage();
+    let coordinates = [];
+    let current = 0;
+    handleImage(images[current], coordinates);
+
+    const btn = document.getElementById("submit");
+
+    btn.addEventListener("click", () => {
+        finalise(coordinates, images[current]);
+        coordinates = [];
+        current = current + 1;
+
+        if (current < images.length) {
+            handleImage(images[current], coordinates);
+        } else {
+            window.close();
+        }
+    });
 });
