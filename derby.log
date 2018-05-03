@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Thu May 03 16:17:15 BST 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-0163-2694-2c10-00000f600000 
+on database directory /Users/one/Development/git-repositories/cloud-detection-game-ransomware/RansomDB with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@4f8e5cde 
+Loaded from file:/Users/one/Development/git-repositories/cloud-detection-game-ransomware/JavaRansomware/JavaRansomware-2.1-jar-with-dependencies.jar
+java.vendor=Oracle Corporation
+java.runtime.version=9.0.1+11
+user.dir=/Users/one/Development/git-repositories/cloud-detection-game-ransomware
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.13.2
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
