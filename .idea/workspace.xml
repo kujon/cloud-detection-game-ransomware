@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b4a5688-2939-49c8-b7e8-8081e0ea97c1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ENCRYPT.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dummy_directory/valuables.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start_cloud_game.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ENCRYPT.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ENCRYPT.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,16 +13,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ENCRYPT.sh" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ENCRYPT.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ENCRYPT.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="21" />
+            <state relative-caret-position="90">
+              <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="start_cloud_game.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="valuables.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dummy_directory/valuables.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="7" selection-start-column="7" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="start_cloud_game.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/start_cloud_game.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
@@ -54,9 +59,9 @@
       <list>
         <option value="$PROJECT_DIR$/do_the_thing.sh" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/start_cloud_game.sh" />
         <option value="$PROJECT_DIR$/dummy_directory/valuables.txt" />
         <option value="$PROJECT_DIR$/ENCRYPT.sh" />
-        <option value="$PROJECT_DIR$/start_cloud_game.sh" />
       </list>
     </option>
   </component>
@@ -87,6 +92,11 @@
             <path>
               <item name="cloud-detection-game-ransomware" type="b2602c69:ProjectViewProjectNode" />
               <item name="cloud-detection-game-ransomware" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud-detection-game-ransomware" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud-detection-game-ransomware" type="462c0819:PsiDirectoryNode" />
+              <item name="dummy_directory" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -165,12 +175,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1525360197510</updated>
-      <workItem from="1525360201926" duration="270000" />
+      <workItem from="1525360201926" duration="320000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="270000" />
+    <option name="totallyTimeSpent" value="320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -184,7 +194,7 @@
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32876712" />
       <window_info id="Designer" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" />
@@ -222,17 +232,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ENCRYPT.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/start_cloud_game.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ENCRYPT.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
         </state>
       </provider>
     </entry>
